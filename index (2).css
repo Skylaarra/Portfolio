@@ -1,0 +1,92 @@
+#portfolio{
+    padding: 50px 0;
+    background-color: #FAEEEE;
+}
+.portfolio-site{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.work-list{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 0px;   
+    width: 50%;
+    margin: 0  auto;
+    background-color: #FAEEEE;
+    padding: 0;
+    
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(170, 232, 237, 0.6), #f186a8);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer p{
+    font-weight: 200;
+}
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.layer a{
+    margin-top: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.2);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    #portfolio {
+        padding: 30px 0;
+    }
+
+    .work-list {
+        width: 80%;
+        margin: 0  auto;
+    }
+
+    .layer {
+        font-size: 12px;
+    }
+}

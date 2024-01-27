@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+<main>
+ <section id="calculator">
+
+ <table>
+
+    <div id="screen">
+
+        <input type="text" name="res" id="res">
+        <input type="text" name="tot" id="tot">
+    </div>
+ 
+    <tbody>
+    <tr>
+        <td><input type="button" value="AC" onclick="delete all(), clicked('AC')" class="pcl" name="cl" id="AC"></td>
+        <td><input type="button" value="✓" onclick="square root(), click ('✓')" class="pcl" id="root"></td>
+        <td><input type="button" value="x²" onclick="power()" class="pcl"></td>
+        <td><h1 id="hrss">HRSS</h1></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="(" onclick="add('par1'), click('parent1')" class="pcl" id="parent1"></td>
+        <td><input type="button" value=")" onclick="add('par2'), click('parent2')" class="pcl" id="parent2"></td>
+        <td><input type="button" value="%" onclick="add('%'), click ('%')" class="pcl" id="rest"></td>
+        <td><input type="button" value="/" onclick="add('/'), click ('/')" class=" pcl2" id="division"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="pcl3" value="7" onclick="add(7), click('7')" id="seven"></td>
+        <td><input type="button" class="pcl3" value="8" onclick="add(8), click('8')" id="eight"></td>
+        <td><input type="button" class="pcl3" value="9" onclick="add(9), click('9')" id="nine"></td>
+        <td><input type="button" value="x" onclick="add('x'), click('x')" class="pcl2" id="x"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="pcl3" value="4" onclick="add(4), click('4')" id="four"></td>
+        <td><input type="button" class="pcl3" value="5" onclick="add(5), click('5')" id="five"></td>
+        <td><input type="button" class="pcl3" value="6" onclick="add(6), click('6')" id="six"></td>
+        <td><input type="button" value="-" onclick="add('-'), click('-')" class="pcl2" id="less"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="pcl3" value="1" onclick="add(1), click('1')" id="one"></td>
+        <td><input type="button" class="pcl3" value="2" onclick="add(2), click('2')" id="two"></td>
+        <td><input type="button" class="pcl3" value="3" onclick="add(3), click('3')" id="three"></td>
+        <td><input type="button" value="+" onclick="add('+'), click('+')" class="pcl2" id="more"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="pcl3" value="8" onclick="add(0), click('0')" id="zero"></td>
+        <td><input type="button" class="pcl3" value="." onclick="add('.'), click('.')" id="point"></td>
+        <td><input type="button" value="Del" onclick="turnoff(), click('Del')" class="pcl2" id="delete"></td>
+        <td><input type="button" value="=" onclick="calculator(), click('=')" id="equal"></td>
+    </tr>
+
+
+    </tbody>
+    </table>
+
+ </section>
+</main>
+
+    <script src="calc.js"></script>
+</body>
+</html>
